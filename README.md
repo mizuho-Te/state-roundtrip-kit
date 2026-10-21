@@ -8,7 +8,7 @@ It provides strict, order-independent snapshot comparison, redacted diagnostics,
 
 ## Verification status
 
-2026-10-21: validated independently on macOS 27.0.1 (Apple Silicon), Xcode 27.0 and Swift 6.4. The core builds and all 14 XCTest methods pass. The iOS UI sample and synthetic host compile for the simulator, and all 5 UI tests pass on an existing iPhone 18 Pro / iOS 27.0 simulator. See `VALIDATION.txt` for the separate UI execution result, evidence, fixes and limitations. GitHub Actions, Linux/Swift 5.9, older OS runtimes and physical devices have not been tested. The supplied CI runs core tests only: Swift 5.9 on Linux and the runner-provided Swift on macOS. It does not execute the five iOS UI tests. A JSON write/read test alone is not evidence of app-restart persistence.
+2026-10-21: validated independently on macOS 27.0.1 (Apple Silicon), Xcode 27.0 and Swift 6.4. The core builds and all 14 XCTest methods pass. The iOS UI sample and synthetic host compile for the simulator, and all 5 UI tests pass on an existing iPhone 18 Pro / iOS 27.0 simulator. See `VALIDATION.txt` for the separate UI execution result, evidence, fixes and limitations. On 2026-10-21, [GitHub Actions](https://github.com/mizuho-Te/state-roundtrip-kit/actions/runs/39574967581) passed all 14 core XCTest methods on each of Linux / Swift 5.9.2 and macOS / Apple Swift 6.3.3. CI does not execute the five iOS UI tests; those results come from the separate synthetic-host simulator run above. Older OS runtimes and physical devices remain untested. A JSON write/read test alone is not evidence of app-restart persistence.
 
 ## Setup
 
