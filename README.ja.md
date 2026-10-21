@@ -14,7 +14,7 @@ XCTest の代用品でも、どのアプリでも自動でテストできるツ�
 
 ## 検証状況
 
-2026-10-21 に、独立した macOS 27.0.1（Apple Silicon）／Xcode 27.0／Swift 6.4 環境でコアのビルドと XCTest 14 件が成功しました。iOS UI サンプルと架空データ専用ホストのコンパイル、既存 iPhone 18 Pro／iOS 27.0 シミュレーターでの UI テスト 5 件も成功しました。UI 実行結果・修正・証拠・制限は `VALIDATION.txt` に分けて記録しています。CI、Linux／Swift 5.9、旧 OS、実機は未検証です。付属 CI は Linux の Swift 5.9 と macOS ランナー付属 Swift でコアテストのみを実行する構成で、iOS UI テスト 5 件は実行しません。JSON ファイルを書いて読むテストと、アプリの再起動検証は別です。
+2026-10-21 に、独立した macOS 27.0.1（Apple Silicon）／Xcode 27.0／Swift 6.4 環境でコアのビルドと XCTest 14 件が成功しました。iOS UI サンプルと架空データ専用ホストのコンパイル、既存 iPhone 18 Pro／iOS 27.0 シミュレーターでの UI テスト 5 件も成功しました。UI 実行結果・修正・証拠・制限は `VALIDATION.txt` に分けて記録しています。2026-10-21 の [GitHub Actions](https://github.com/mizuho-Te/state-roundtrip-kit/actions/runs/39574967581) では、Linux／Swift 5.9.2 と macOS／Apple Swift 6.3.3 のそれぞれでコア XCTest 14 件が成功しました。CI は iOS UI テスト 5 件を実行せず、上記 UI 結果は別途実施した架空ホストのシミュレーター検証です。旧 OS・実機は未検証です。JSON ファイルを書いて読むテストと、アプリの再起動検証は別です。
 
 ## 導入
 
