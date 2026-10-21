@@ -35,9 +35,8 @@ Limitations
 Only the synthetic card's selected question field was verified after restart.
 This does not validate a real application or its whole database, Core Data,
 SwiftData, sync, migrations, crash recovery, OS kills or disk-full handling.
-Physical devices, older macOS/iOS versions, Linux, Swift 5.9 and remote
-GitHub Actions have NOT been tested. iOS 15 is a declared library/host
-minimum; UI tests declare iOS 17. Neither older runtime was exercised.
+Physical devices and older macOS/iOS versions have NOT been tested.
+iOS 15 is a declared library/host minimum; UI tests declare iOS 17. Neither older runtime was exercised.
 The UI sample had two animation-related waits of about 60 seconds;
 all final tests passed, but UI-test timing was not consistently fast.
 An initial host run failed due to missing UIScene lifecycle support;
@@ -51,7 +50,16 @@ Distributed under the MIT License; see LICENSE.
 
 日本語要約
 コア14件、架空カード専用ホストのUIテスト5件が上記環境で成功しました。
-実アプリ・全データ・実機・旧OS・Linux・Swift 5.9・リモートCIは未検証です。
+実アプリ・全データ・実機・旧OSは未検証です。
+GitHub ActionsではLinux Swift 5.9.2とmacOS Apple Swift 6.3.3で各コア14件が成功。
+UIテスト5件はCIではなく、上記の独立したシミュレーター検証です。
 入力値待機、古い保存完了表示の拒否、placeholderの取り違え防止を追加。
 専用ホストはDEBUG限定、通常ストア・同期・通信を実装していません。
 この配布候補にはソースと文書のみを含み、個人パス・端末ID・ログは含めません。
+
+Remote core CI (2026-10-21)
+https://github.com/mizuho-Te/state-roundtrip-kit/actions/runs/39574967581
+Commit: e0cd5124e89146f326f0cf2d668d954a9fe97cb9
+Linux / Swift 5.9.2: 14 XCTest methods passed.
+macOS / Apple Swift 6.3.3: 14 XCTest methods passed.
+This CI executes core package tests only, not the five iOS UI tests.
