@@ -1,0 +1,57 @@
+State Roundtrip Kit — validation summary / 検証概要
+Date: 2026-10-21
+
+Environment
+macOS 27.0.1 (26A434), Apple Silicon / arm64
+Xcode 27.0 (27A266a), Apple Swift 6.4
+Simulator SDK: iOS 27.0 (24A430)
+UI runtime: iPhone 18 Pro simulator, iOS 27.0 (24A434), arm64
+
+Verified results
+- Core compilation succeeded.
+- Core XCTest: 14 passed, 0 failed, in initial and final runs.
+- Synthetic iOS host and UI-test targets compiled successfully.
+- UI XCTest: 5 passed, 0 failed, 0 skipped.
+- Release host compiled. Fixture handling/storage is DEBUG-only;
+  binary string checks confirmed isolation-related strings absent.
+  Release UI execution itself was not performed.
+
+UI tests executed
+1. testSyntheticCardSurvivesRelaunch
+2. testEditingClearsPreviousSaveAcknowledgment
+3. testInputPredicateRejectsPartialValue
+4. testMalformedFixtureIsRejected
+5. testUnsavedEditDoesNotSurviveRelaunch
+
+Source continuity
+The 10 original source files matched the authoring draft byte-for-byte.
+Package.swift, both core source files and the 14 core tests were unchanged.
+UI sample additions wait for the typed value, reject a stale save badge,
+and guard against a placeholder being mistaken for entered text.
+A standalone synthetic UIKit/UIScene host and four safety tests were added.
+No private application code, real user records or production accounts were used.
+
+Limitations
+Only the synthetic card's selected question field was verified after restart.
+This does not validate a real application or its whole database, Core Data,
+SwiftData, sync, migrations, crash recovery, OS kills or disk-full handling.
+Physical devices, older macOS/iOS versions, Linux, Swift 5.9 and remote
+GitHub Actions have NOT been tested. iOS 15 is a declared library/host
+minimum; UI tests declare iOS 17. Neither older runtime was exercised.
+The UI sample had two animation-related waits of about 60 seconds;
+all final tests passed, but UI-test timing was not consistently fast.
+An initial host run failed due to missing UIScene lifecycle support;
+the host was fixed and the final five tests were rerun successfully.
+
+Packaging
+This distribution contains source, synthetic host tests and documentation only.
+Machine paths, simulator identifiers, raw logs and xcresult bundles are excluded.
+The validation evidence archive is retained separately for private review.
+Distributed under the MIT License; see LICENSE.
+
+日本語要約
+コア14件、架空カード専用ホストのUIテスト5件が上記環境で成功しました。
+実アプリ・全データ・実機・旧OS・Linux・Swift 5.9・リモートCIは未検証です。
+入力値待機、古い保存完了表示の拒否、placeholderの取り違え防止を追加。
+専用ホストはDEBUG限定、通常ストア・同期・通信を実装していません。
+この配布候補にはソースと文書のみを含み、個人パス・端末ID・ログは含めません。
