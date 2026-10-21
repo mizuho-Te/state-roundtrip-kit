@@ -1,0 +1,60 @@
+name: RoundtripValidation
+options:
+  bundleIdPrefix: local.state-roundtrip.validation
+  deploymentTarget:
+    iOS: "15.0"
+packages:
+  StateRoundtripKit:
+    path: ..
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGNING_REQUIRED: NO
+    GENERATE_INFOPLIST_FILE: YES
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  RoundtripValidationHost:
+    type: application
+    platform: iOS
+    sources: [Host]
+    info:
+      path: Host/Info.plist
+      properties:
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.state-roundtrip.validation.host.20261021
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Roundtrip Validation
+  RoundtripValidationUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: ../Examples/RoundtripUITests.swift
+      - path: UITests
+    dependencies:
+      - target: RoundtripValidationHost
+      - package: StateRoundtripKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.state-roundtrip.validation.uitests.20261021
+        TEST_TARGET_NAME: RoundtripValidationHost
+schemes:
+  RoundtripValidation:
+    build:
+      targets:
+        RoundtripValidationHost: all
+        RoundtripValidationUITests: [test]
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - name: RoundtripValidationUITests
+          parallelizable: false
