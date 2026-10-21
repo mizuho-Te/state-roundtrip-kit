@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EE6FBF5D7EEC894B09BE28B /* StateRoundtripKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F449C61C94B50854FAB43A1 /* StateRoundtripKit */; };
+		961A54F084C9B1010C4F9107 /* HostSafetyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A509A64A18CA19150297D808 /* HostSafetyUITests.swift */; };
+		B59220EB221A2243A587908B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B6088B10FFCF4C0921DB2 /* App.swift */; };
+		B6528F47D8BB8C169ED921D2 /* RoundtripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60772B916234DC09607C07B /* RoundtripUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3950E459D3C5CD71435DDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43975B6C431397633D212061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AAF174C024BD219426715B4;
+			remoteInfo = RoundtripValidationHost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		252B6088B10FFCF4C0921DB2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3EDA8E7B1C7887047C90B53A /* RoundtripValidationUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RoundtripValidationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E67B4BA321A26C01E3613A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C7CAF540CC69C8B0B998236 /* state-roundtrip-kit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "state-roundtrip-kit"; path = ..; sourceTree = SOURCE_ROOT; };
+		A509A64A18CA19150297D808 /* HostSafetyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostSafetyUITests.swift; sourceTree = "<group>"; };
+		E60772B916234DC09607C07B /* RoundtripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundtripUITests.swift; sourceTree = "<group>"; };
+		F36D1FC2793DE357351CB665 /* RoundtripValidationHost.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RoundtripValidationHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53C3F83421DDD3B80E799B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE6FBF5D7EEC894B09BE28B /* StateRoundtripKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA5489A84EA0DDD153129EC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				E60772B916234DC09607C07B /* RoundtripUITests.swift */,
+			);
+			name = Examples;
+			path = ../Examples;
+			sourceTree = "<group>";
+		};
+		3A2043626F2E21F575675BAE /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				252B6088B10FFCF4C0921DB2 /* App.swift */,
+				87E67B4BA321A26C01E3613A /* Info.plist */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		583A0FE6E151A4F3369B9BB7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8C7CAF540CC69C8B0B998236 /* state-roundtrip-kit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5A41E64245FBFBDEF87638B1 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A509A64A18CA19150297D808 /* HostSafetyUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		6D6087041CBD160BDF37C6C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36D1FC2793DE357351CB665 /* RoundtripValidationHost.app */,
+				3EDA8E7B1C7887047C90B53A /* RoundtripValidationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B1F7EB882FBB9630A4AC074 = {
+			isa = PBXGroup;
+			children = (
+				1CA5489A84EA0DDD153129EC /* Examples */,
+				3A2043626F2E21F575675BAE /* Host */,
+				583A0FE6E151A4F3369B9BB7 /* Packages */,
+				5A41E64245FBFBDEF87638B1 /* UITests */,
+				6D6087041CBD160BDF37C6C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AAF174C024BD219426715B4 /* RoundtripValidationHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB9A62BA507D20777AABA32 /* Build configuration list for PBXNativeTarget "RoundtripValidationHost" */;
+			buildPhases = (
+				3BD56E8548E6F1148581AA85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundtripValidationHost;
+			packageProductDependencies = (
+			);
+			productName = RoundtripValidationHost;
+			productReference = F36D1FC2793DE357351CB665 /* RoundtripValidationHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B30243D45651C957D4160524 /* RoundtripValidationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54338FB108A2F37DD30A5B65 /* Build configuration list for PBXNativeTarget "RoundtripValidationUITests" */;
+			buildPhases = (
+				11A2FBD47B9C7210BCB3D59E /* Sources */,
+				53C3F83421DDD3B80E799B8A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E274DA84B65863F7D832C7 /* PBXTargetDependency */,
+			);
+			name = RoundtripValidationUITests;
+			packageProductDependencies = (
+				1F449C61C94B50854FAB43A1 /* StateRoundtripKit */,
+			);
+			productName = RoundtripValidationUITests;
+			productReference = 3EDA8E7B1C7887047C90B53A /* RoundtripValidationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43975B6C431397633D212061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B30243D45651C957D4160524 = {
+						TestTargetID = 4AAF174C024BD219426715B4;
+					};
+				};
+			};
+			buildConfigurationList = 5B9DC2057D74EB37FD101474 /* Build configuration list for PBXProject "RoundtripValidation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7B1F7EB882FBB9630A4AC074;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				244406264ED1D4DE1461A769 /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AAF174C024BD219426715B4 /* RoundtripValidationHost */,
+				B30243D45651C957D4160524 /* RoundtripValidationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11A2FBD47B9C7210BCB3D59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961A54F084C9B1010C4F9107 /* HostSafetyUITests.swift in Sources */,
+				B6528F47D8BB8C169ED921D2 /* RoundtripUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD56E8548E6F1148581AA85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59220EB221A2243A587908B /* App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6E274DA84B65863F7D832C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AAF174C024BD219426715B4 /* RoundtripValidationHost */;
+			targetProxy = E3950E459D3C5CD71435DDB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E795514BFD8FB2671667F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.state-roundtrip.validation.uitests.20261021";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundtripValidationHost;
+			};
+			name = Debug;
+		};
+		19B6BA927E1951F708BB0F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7C9BE4448EA06C123C0BBECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Host/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roundtrip Validation";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.state-roundtrip.validation.host.20261021";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		911607FD7113B7F2BDA8EEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BF1CACEA864A03BE3EF2F763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Host/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roundtrip Validation";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.state-roundtrip.validation.host.20261021";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6EAE65DA8388E30606B50C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.state-roundtrip.validation.uitests.20261021";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoundtripValidationHost;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54338FB108A2F37DD30A5B65 /* Build configuration list for PBXNativeTarget "RoundtripValidationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E795514BFD8FB2671667F4E /* Debug */,
+				E6EAE65DA8388E30606B50C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B9DC2057D74EB37FD101474 /* Build configuration list for PBXProject "RoundtripValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6BA927E1951F708BB0F9C /* Debug */,
+				911607FD7113B7F2BDA8EEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DFB9A62BA507D20777AABA32 /* Build configuration list for PBXNativeTarget "RoundtripValidationHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1CACEA864A03BE3EF2F763 /* Debug */,
+				7C9BE4448EA06C123C0BBECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		244406264ED1D4DE1461A769 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F449C61C94B50854FAB43A1 /* StateRoundtripKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StateRoundtripKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 43975B6C431397633D212061 /* Project object */;
+}
